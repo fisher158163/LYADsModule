@@ -9,7 +9,21 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - LYADsModule (0.1.0)
+  - LYADsModule (1.0.1):
+    - LYADsModule/AFNetworking (= 1.0.1)
+    - LYADsModule/Config (= 1.0.1)
+    - LYADsModule/LYADsLaunchView (= 1.0.1)
+    - LYADsModule/LYADsManager (= 1.0.1)
+    - LYADsModule/LYADsNetworkingTool (= 1.0.1)
+    - LYADsModule/LYADsWebViewController (= 1.0.1)
+    - LYADsModule/SDWebImage (= 1.0.1)
+  - LYADsModule/AFNetworking (1.0.1)
+  - LYADsModule/Config (1.0.1)
+  - LYADsModule/LYADsLaunchView (1.0.1)
+  - LYADsModule/LYADsManager (1.0.1)
+  - LYADsModule/LYADsNetworkingTool (1.0.1)
+  - LYADsModule/LYADsWebViewController (1.0.1)
+  - LYADsModule/SDWebImage (1.0.1)
   - Specta (1.0.7)
 
 DEPENDENCIES:
@@ -34,7 +48,7 @@ SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  LYADsModule: b5b141baa51f43c7b9dcc6c85d3f602dc819610d
+  LYADsModule: a040e990cdad3d3c7722df3c33da24fce51bee0d
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: edf9fda121449700f925701e485dd3f27bec2820
