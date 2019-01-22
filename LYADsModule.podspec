@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYADsModule'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'LYADsModule is LaunchAd function for Project'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ LYADsModule is LaunchAd function for Project
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liyu158163' => '13798464518@163.com' }
-  s.source           = { :git => 'https://github.com/liyu158163/LYADsModule.git', :tag => '1.0.1' }
+  s.source           = { :git => 'https://github.com/liyu158163/LYADsModule.git', :tag => '1.0.2' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -54,11 +54,11 @@ LYADsModule is LaunchAd function for Project
   end
 
   s.subspec 'SDWebImage' do |ss|
-      ss.source_files = 'LYADsModule/Classes/Vender/SDWebImage*.{h,m}'
+      ss.source_files = 'LYADsModule/Classes/Vender/SDWebImage/*.{h,m}'
   end
 
   s.subspec 'AFNetworking' do |ss|
-      ss.source_files = 'LYADsModule/Classes/Vender/AFNetworking*.{h,m}'
+      ss.source_files = 'LYADsModule/Classes/Vender/AFNetworking/*.{h,m}'
   end
 
   # s.subspec 'SDWebImage' do |sss|
