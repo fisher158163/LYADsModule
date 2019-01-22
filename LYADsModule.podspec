@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYADsModule'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'LYADsModule is LaunchAd function for Project'
 
 # This description is used to generate tags and improve search results.
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-LYADsModule is LaunchAd function for Project
+   LYADsModule is LaunchAd function for Project
                        DESC
 
   s.homepage         = 'https://github.com/liyu158163/LYADsModule'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liyu158163' => '13798464518@163.com' }
-  s.source           = { :git => 'https://github.com/liyu158163/LYADsModule.git', :tag => '1.0.3' }
+  s.source           = { :git => 'https://github.com/liyu158163/LYADsModule.git', :tag => '1.0.4' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LYADsModule/Classes/**/*'
+  # s.source_files = 'LYADsModule/Classes/**/*'
 
 
   s.subspec 'Config' do |ss|
@@ -60,14 +60,6 @@ LYADsModule is LaunchAd function for Project
   s.subspec 'AFNetworking' do |ss|
       ss.source_files = 'LYADsModule/Classes/Vender/AFNetworking/*.{h,m}'
   end
-
-  # s.subspec 'SDWebImage' do |sss|
-  #     sss.source_files = 'LYADsModule/Classes/Vender/SDWebImage/*.{h,m}'
-  # end
-
-  # s.subspec 'AFNetworking' do |sss|
-  #     sss.source_files = 'LYADsModule/Classes/Vender/AFNetworking/*.{h,m}'
-  # end
 
   # s.resource_bundles = {
   #   'LYADsModule' => ['LYADsModule/Assets/*.png']
