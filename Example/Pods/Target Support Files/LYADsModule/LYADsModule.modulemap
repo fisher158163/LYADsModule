@@ -1,0 +1,6 @@
+framework module LYADsModule {
+  umbrella header "LYADsModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
