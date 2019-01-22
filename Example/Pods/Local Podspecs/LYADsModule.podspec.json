@@ -1,6 +1,6 @@
 {
   "name": "LYADsModule",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "summary": "LYADsModule is a Library has LaunchAd-function for Project",
   "description": "LYADsModule is a Library has LaunchAd-function for Project",
   "homepage": "https://github.com/liyu158163/LYADsModule",
@@ -13,23 +13,27 @@
   },
   "source": {
     "git": "https://github.com/liyu158163/LYADsModule.git",
-    "tag": "1.0.6"
+    "tag": "1.0.8"
   },
+  "header_dir": "LYADsModule",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "subspecs": [
     {
       "name": "Config",
-      "source_files": "LYADsModule/Classes/LYADsModule/Config/*.{h}"
+      "source_files": "LYADsModule/Classes/LYADsModule/Config/*.{h}",
+      "header_dir": "Config"
     },
     {
       "name": "LYADsWebViewController",
-      "source_files": "LYADsModule/Classes/LYADsModule/LYADsWebViewController/*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/LYADsWebViewController/*.{h,m}",
+      "header_dir": "LYADsWebViewController"
     },
     {
       "name": "LYADsManager",
       "source_files": "LYADsModule/Classes/LYADsModule/LYADsManager/*.{h,m}",
+      "header_dir": "LYADsManager",
       "dependencies": {
         "LYADsModule/Classes/LYADsModule/Config": [
 
@@ -48,6 +52,7 @@
     {
       "name": "LYADsNetworkingTool",
       "source_files": "LYADsModule/Classes/LYADsModule/LYADsNetworkingTool/*.{h,m}",
+      "header_dir": "LYADsNetworkingTool",
       "dependencies": {
         "LYADsModule/Classes/LYADsModule/Vender/AFNetworking": [
 
@@ -57,6 +62,7 @@
     {
       "name": "LYADsLaunchView",
       "source_files": "LYADsModule/Classes/LYADsModule/LYADsLaunchView/*.{h,m}",
+      "header_dir": "LYADsLaunchView",
       "dependencies": {
         "LYADsModule/Classes/LYADsModule/Vender/SDWebImage": [
 
@@ -67,12 +73,20 @@
       }
     },
     {
-      "name": "SDWebImage",
-      "source_files": "LYADsModule/Classes/LYADsModule/Vender/SDWebImage/*.{h,m}"
-    },
-    {
-      "name": "AFNetworking",
-      "source_files": "LYADsModule/Classes/LYADsModule/Vender/AFNetworking/*.{h,m}"
+      "name": "Vender",
+      "header_dir": "Vender",
+      "subspecs": [
+        {
+          "name": "SDWebImage",
+          "source_files": "LYADsModule/Classes/LYADsModule/Vender/SDWebImage/*.{h,m}",
+          "header_dir": "SDWebImage"
+        },
+        {
+          "name": "AFNetworking",
+          "source_files": "LYADsModule/Classes/LYADsModule/Vender/AFNetworking/*.{h,m}",
+          "header_dir": "AFNetworking"
+        }
+      ]
     }
   ]
 }
