@@ -1,8 +1,8 @@
 {
   "name": "LYADsModule",
-  "version": "1.0.1",
-  "summary": "LYADsModule is LaunchAd function for Project",
-  "description": "LYADsModule is LaunchAd function for Project",
+  "version": "1.0.6",
+  "summary": "LYADsModule is a Library has LaunchAd-function for Project",
+  "description": "LYADsModule is a Library has LaunchAd-function for Project",
   "homepage": "https://github.com/liyu158163/LYADsModule",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liyu158163/LYADsModule.git",
-    "tag": "1.0.1"
+    "tag": "1.0.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,31 +21,58 @@
   "subspecs": [
     {
       "name": "Config",
-      "source_files": "LYADsModule/Classes/Config/*.{h}"
+      "source_files": "LYADsModule/Classes/LYADsModule/Config/*.{h}"
     },
     {
       "name": "LYADsWebViewController",
-      "source_files": "LYADsModule/Classes/LYADsWebViewController/*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/LYADsWebViewController/*.{h,m}"
     },
     {
       "name": "LYADsManager",
-      "source_files": "LYADsModule/Classes/LYADsManager/*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/LYADsManager/*.{h,m}",
+      "dependencies": {
+        "LYADsModule/Classes/LYADsModule/Config": [
+
+        ],
+        "LYADsModule/Classes/LYADsModule/LYADsWebViewController": [
+
+        ],
+        "LYADsModule/Classes/LYADsModule/LYADsNetworkingTool": [
+
+        ],
+        "LYADsModule/Classes/LYADsModule/LYADsLaunchView": [
+
+        ]
+      }
     },
     {
       "name": "LYADsNetworkingTool",
-      "source_files": "LYADsModule/Classes/LYADsNetworkingTool/*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/LYADsNetworkingTool/*.{h,m}",
+      "dependencies": {
+        "LYADsModule/Classes/LYADsModule/Vender/AFNetworking": [
+
+        ]
+      }
     },
     {
       "name": "LYADsLaunchView",
-      "source_files": "LYADsModule/Classes/LYADsLaunchView/*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/LYADsLaunchView/*.{h,m}",
+      "dependencies": {
+        "LYADsModule/Classes/LYADsModule/Vender/SDWebImage": [
+
+        ],
+        "LYADsModule/Classes/LYADsModule/LYADsManager": [
+
+        ]
+      }
     },
     {
       "name": "SDWebImage",
-      "source_files": "LYADsModule/Classes/Vender/SDWebImage*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/Vender/SDWebImage/*.{h,m}"
     },
     {
       "name": "AFNetworking",
-      "source_files": "LYADsModule/Classes/Vender/AFNetworking*.{h,m}"
+      "source_files": "LYADsModule/Classes/LYADsModule/Vender/AFNetworking/*.{h,m}"
     }
   ]
 }

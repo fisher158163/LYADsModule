@@ -8,7 +8,6 @@
 #import "LYADsManager.h"
 #import "LYADsNetworkingTool.h"
 #import "LYADsLaunchView.h"
-#import "LYADsWebViewController.h"
 
 @interface LYADsManager ()
 @property (nonatomic, copy) NSString *pageURL;

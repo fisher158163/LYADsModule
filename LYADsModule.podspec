@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYADsModule'
-  s.version          = '1.0.6'
-  s.summary          = 'LYADsModule is LaunchAd function for Project'
+  s.version          = '1.0.7'
+  s.summary          = 'LYADsModule is a Library has LaunchAd-function for Project'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-   LYADsModule is LaunchAd function for Project
+   LYADsModule is a Library has LaunchAd-function for Project
                        DESC
 
   s.homepage         = 'https://github.com/liyu158163/LYADsModule'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liyu158163' => '13798464518@163.com' }
-  s.source           = { :git => 'https://github.com/liyu158163/LYADsModule.git', :tag => '1.0.6' }
+  s.source           = { :git => 'https://github.com/liyu158163/LYADsModule.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -42,23 +42,23 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'LYADsManager' do |ss|
-      ss.source_files = 'LYADsModule/Classes/LYADsModule/LYADsManager/*.{h,m}'
-      ss.dependency 'LYADsModule/Classes/LYADsModule/Config'
-      ss.dependency 'LYADsModule/Classes/LYADsModule/LYADsWebViewController'
-      ss.dependency 'LYADsModule/Classes/LYADsModule/LYADsNetworkingTool'
+      ss.source_files = 'LYADsModule/Classes/LYADsModule/LYADsManager/*.{h,m}',
+      ss.dependency 'LYADsModule/Classes/LYADsModule/Config',
+      ss.dependency 'LYADsModule/Classes/LYADsModule/LYADsWebViewController',
+      ss.dependency 'LYADsModule/Classes/LYADsModule/LYADsNetworkingTool',
       ss.dependency 'LYADsModule/Classes/LYADsModule/LYADsLaunchView'
 
   end
 
   s.subspec 'LYADsNetworkingTool' do |ss|
-      ss.source_files = 'LYADsModule/Classes/LYADsModule/LYADsNetworkingTool/*.{h,m}'
+      ss.source_files = 'LYADsModule/Classes/LYADsModule/LYADsNetworkingTool/*.{h,m}',
       ss.dependency 'LYADsModule/Classes/LYADsModule/Vender/AFNetworking'
 
   end
 
   s.subspec 'LYADsLaunchView' do |ss|
-      ss.source_files = 'LYADsModule/Classes/LYADsModule/LYADsLaunchView/*.{h,m}'
-      ss.dependency 'LYADsModule/Classes/LYADsModule/Vender/SDWebImage'
+      ss.source_files = 'LYADsModule/Classes/LYADsModule/LYADsLaunchView/*.{h,m}',
+      ss.dependency 'LYADsModule/Classes/LYADsModule/Vender/SDWebImage',
       ss.dependency 'LYADsModule/Classes/LYADsModule/LYADsManager'
   end
 
