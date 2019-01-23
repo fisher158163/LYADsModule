@@ -1,6 +1,6 @@
 {
   "name": "LYADsModule",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "summary": "LYADsModule is a Library has LaunchAd-function for Project",
   "description": "LYADsModule is a Library has LaunchAd-function for Project",
   "homepage": "https://github.com/liyu158163/LYADsModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liyu158163/LYADsModule.git",
-    "tag": "1.1.0"
+    "tag": "1.1.1"
   },
   "header_dir": "LYADsModule",
   "platforms": {
@@ -22,10 +22,10 @@
   "source_files": "LYADsModule/Classes/**/*",
   "dependencies": {
     "SDWebImage": [
-      "~> 3.8.2"
+
     ],
     "AFNetworking": [
-      "~> 3.2.1"
+
     ]
   }
 }

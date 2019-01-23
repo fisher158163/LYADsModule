@@ -34,10 +34,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LYADsModule/Classes/**/*'
-  s.dependency 'SDWebImage'
-  s.dependency 'AFNetworking'
-  # s.dependency 'SDWebImage', '~> 3.8.2'
-  # s.dependency 'AFNetworking', '~> 3.2.1'
+  s.dependency 'SDWebImage', '~> 3.8.2'
+  s.dependency 'AFNetworking', '~> 3.2.1'
 
 
   # s.subspec 'Config' do |ss|
