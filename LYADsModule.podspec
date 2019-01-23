@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYADsModule'
-  s.version          = '1.0.9'
+  s.version          = '1.1.0'
   s.summary          = 'LYADsModule is a Library has LaunchAd-function for Project'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LYADsModule/Classes/**/*'
+  s.dependency 'SDWebImage', '~> 3.8.2'
+  s.dependency 'AFNetworking', '~> 3.2.1'
 
 
   # s.subspec 'Config' do |ss|
